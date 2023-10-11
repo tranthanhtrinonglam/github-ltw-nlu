@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg--pupple: #bd59d7;
+    --font--pupple:#492353;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:  url(/Lab3/form_2/img/1600w-giML6YkH-f4.webp);
+}
+.mg-60{
+    margin: 0 60px;
+}
+.mg-100{
+    margin: 0 100px;
+}
+ input{
+    border: 0;
+    outline: none;
+}
+#app{
+    width: 360px;
+    background-color: white;
+    border-radius: 20px;
+}
+#header{
+    margin: 50px 0;
+    text-align: center;
+}
+#header h1{
+    color:var(--font--pupple);
+}
+.container__grid{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.mg-100 input{
+    background-color: var(--bg--pupple);
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 1px 10px 10px 6px rgba(81,81,81, 0.1);
+}
+.error{
+    transform: translate(60px, -10px);
+    color: red;
+    font-size: 12px;
+}
+.container__signIn{
+margin-top: 20px;
+}
+.container__input input{
+   box-shadow: 1px 1px 4px 4px rgba(81, 81, 81, 0.1);
+   border-radius: 10px;
+   padding: 18px;
+   font-weight: 700;
+   color: var(--font--pupple);
+}
+.container__input input::placeholder{
+   color: var(--font--pupple);
+}
+.container__link{
+    margin: 40px 0 80px;
+    text-align: center;
+}
+.container__link span{
+    font-size: 14px;
+    color: #ababab;   
+}
+.container__link .container__icon {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.container__link .container__icon .container__icon--connect{
+    box-shadow: 1px 2px 4px 4px rgba(81, 81, 81, 0.1);
+    padding: 8px 10px;
+    border-radius: 50%;
+}
+a.container__icon--connect + a.container__icon--connect{
+    margin-left: 8px;
+}
+#footer{
+    margin-bottom: 20px;
+    text-align: center;   
+}
+#footer input{
+    border-radius: 10px;
+    background-color:white;
+    color: var(--font--pupple);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+

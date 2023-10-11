@@ -1,0 +1,27 @@
+var a_n = document.querySelector('.mu_2');
+var b_n = document.querySelector('.mu_1');
+var c_n = document.querySelector('.mu_0');
+var btn_result = document.querySelector('.btn_result');
+var ketqua = document.querySelector('.ketqua');
+btn_result.addEventListener('click',function(){
+    // Lấy giá trị từ các trường input
+    var a = parseInt(a_n.value);
+    var b = parseInt(b_n.value);
+    var c = parseInt(c_n.value);
+    var delta = b*b - 4*a*c;
+    if (delta > 0) {
+        // Phương trình có 2 nghiệm phân biệt
+        var x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        var x2 = (-b - Math.sqrt(delta)) / (2 * a);
+        ketqua.value = "Phương trình có 2 nghiệm phân biệt: x1 = " + x1 
+        + "\nx2 = " + x2;
+    } else if (delta === 0) {
+        // Phương trình có nghiệm kép
+        var x = -b / (2 * a);
+        ketqua.value = "Phương trình có nghiệm kép:\nx = " + x;
+    } else {
+        // Phương trình vô nghiệm
+        ketqua.value = "Phương trình vô nghiệm";
+    }
+    
+});

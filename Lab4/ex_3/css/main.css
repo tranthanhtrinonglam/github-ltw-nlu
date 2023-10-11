@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(45deg,#efefef 25%,rgba(239,239,239,0) 25%,
+    rgba(239,239,239,0) 75%,#efefef 75%,#efefef),
+    linear-gradient(45deg,#efefef 25%,rgba(239,239,239,0) 25%,
+    rgba(239,239,239,0) 75%,#efefef 75%,#efefef);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
